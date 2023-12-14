@@ -70,44 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//     // For the second set of buttons
-//     const ulBlok2 = document.querySelector(".ul-blok2"); // Adjust the selector
-//     const scrollLeftButton2 = document.querySelector(".scroll-links2"); // Adjust the selector
-//     const scrollRightButton2 = document.querySelector(".scroll-rechts2"); // Adjust the selector
-
-//     scrollLeftButton2.addEventListener("click", function () {
-//         ulBlok2.scrollLeft -= scrollAmount;
-//     });
-
-//     scrollRightButton2.addEventListener("click", function () {
-//         ulBlok2.scrollLeft += scrollAmount;
-//     });
-// });
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Plaats hier de JavaScript-code
-//     const scrollButtonContainers = document.querySelectorAll(".scroll-buttons");
-
-//     scrollButtonContainers.forEach(function (container) {
-//         const ulBlok = container.querySelector(".ul-blok");
-//         const scrollLeftButton = container.querySelector(".scroll-links");
-//         const scrollRightButton = container.querySelector(".scroll-rechts");
-
-//         let scrollAmount = 300;
-
-//         scrollLeftButton.addEventListener("click", function () {
-//             ulBlok.scrollLeft -= scrollAmount;
-//         });
-
-//         scrollRightButton.addEventListener("click", function () {
-//             ulBlok.scrollLeft += scrollAmount;
-//         });
-//     });
-// });
-
-
-
 // boeken knop boek blok 
 document.addEventListener("DOMContentLoaded", function () {
     const boekenButton = document.getElementById("boeken-button");
@@ -125,4 +87,53 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// boeken lijst home pagina hartjes rood maken
 
+let button_heart = document.querySelector("#heartIcon1")
+let button_heart2 = document.querySelector("#heartIcon2")
+let button_heart3 = document.querySelector("#heartIcon3")
+button_heart.addEventListener('click', heartfill)
+button_heart2.addEventListener('click', heartfill2)
+button_heart3.addEventListener('click', heartfill3)
+
+function heartfill() {
+    button_heart.classList.toggle('heart-fill');
+  }
+function heartfill2() {
+    button_heart2.classList.toggle('heart-fill');
+  }
+  function heartfill3() {
+    button_heart3.classList.toggle('heart-fill');
+  }
+
+// bericht boek is toegevoegd
+function messageToegevoegd() {
+    alert("uw boek is toegevoegd aan favorieten!")
+}
+
+// popup
+
+let popup1 = document.getElementById("book-1");//afbeelding boek is book-1
+popup1.addEventListener('click', togglePopup);
+
+function togglePopup() {
+    let popup = document.getElementById("popup1");
+    if (popup.style.display === "none") {
+        popup.style.display = "block";
+    } else {
+        popup.style.display = "none";
+    }
+    
+}
+let closeButton = document.getElementById("close");
+closeButton.addEventListener('click', closePopup);
+
+function closePopup() {
+    let popup = document.getElementById("popup1");
+    popup.style.display = "none";
+}
+
+  
+
+
+  
