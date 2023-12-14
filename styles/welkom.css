@@ -585,9 +585,8 @@ body.dark .home .text{
     .gebruiker{
         padding: 0 7em 3em;
     }
-    .ul-blok{
-        display: flex;
-        overflow-x:scroll;
+    .ul-book{
+        width: 55rem;
     }
     .title-hompage{
         position: relative;
