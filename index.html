@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="./styles/mijnoba.css">
+    <link rel="stylesheet" href="./styles/welkom.css">
 
     <!-- load icon libary -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -50,7 +51,7 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="welkom.html">
+                        <a href="index.html">
                             <i class='bx bx-home icon'></i>
                             <span class="text nav-text">Welkom</span>
                         </a>
@@ -104,7 +105,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="familieOverzicht.html">
+                        <a href="]familieOverzicht.html">
                             <i class='bx bx-group icon' ></i>
                             <span class="text nav-text">Familieoverzicht</span>
                         </a>-
@@ -138,150 +139,50 @@
 
     </nav>
     <section class="home">
-        <img class="oba-logo" src="./image/oba_20.png" alt="oba-logo-rood">
-            <!-- HIER BEGINT MIJN EIGEN CODE -->
-    <header>
-        <h1>Familie Reijden</h1>
-    </header>
-
-    <!-- Voor elke gebruiker een eigen section -->
-    <section class="gebruiker"> 
-        <h2> Ouder 1 (Beheerder) </h2>
-        <div class="scroll-buttons">
-            <button class="scroll-links">◀</button>
-            <button class="scroll-rechts">▶</button>
-        </div>
-        <h3> Huidige boeken </h3>
-        <ul class="ul-blok">
-            <li class="boek-blok"> 
-                <img class="image-boek" src="/image/book-1.png" alt="book-1">
-                <P> <span class="book-title">The art city</span><br> Symbol icon<br>Inleverdatum: 08-10-2023 </p>
-                </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-10.png" alt="book-10">
-                <P> <span class="book-title">Reto</span><br>spant<br> Inleverdatum: 20-01-2024 </p>
-                </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book1.jpg" alt="book1">
-                <P><span class="book-title">Sin eater</span> <br> Megan Campisi <br>Inleverdatum: 02-05-2024 </p>
-                </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book7.jpg" alt="book7">
-                <p> <span class="book-title">Late night toughts</span><br> Vee<br>Inleverdatum: 15-05-2024</p>
-            </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book9.jpg" alt="book9">
-                <p>  <span class="book-title">Wilder girls</span><br>Rory Power<br>Inleverdatum: 26-11-2024</p></li>
-        </ul>
-          <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon1', 'borrowing-list1')" class="uitleen">Uitleengeschiedenis <span id="toggle-icon1">+</span></h4>
-        <article >
-            <ul class="ul-simpel" id="borrowing-list1">
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-            </ul>
-        </article>
-    </section>
-
-    <section class="gebruiker">
-        <h2> Ouder 2 </h2>
-        <!-- <div class="scroll-buttons">
-            <button class="scroll-links3">◀</button>
-            <button class="scroll-rechts3">▶</button>
-        </div>
-         -->
-        <ul class="ul-blok">
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-2.png" alt="book-2">
-                 <P> <span class="book-title">Titel</span> <br> Auteur Inleverdatum</p>
-
-            </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-4.png" alt="book-4">
-                <P> <span class="book-title">Titel</span><br> Auteur Inleverdatum</p>
-                </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-5.png" alt="book-5">
-                <p> <span class="book-title">Titel</span> <br>Auteur Inleverdatum</p>
-            </li>
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-9.png" alt="book-9">
-                <p> <span class="book-title">Titel</span><br> Auteur Inleverdatum</p>
-            </li>
-        </ul>
-          <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon2', 'borrowing-list2')" class="uitleen">Uitleengeschiedenis <span id="toggle-icon2">+</span></h4>
-        <article >
-            <ul class="ul-simpel" id="borrowing-list2">
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-            </ul>
-        </article>  
-    </section>
-
-    <section class="gebruiker">
-        <H2> kind1 </H2>
-     
-        <ul class="ul-blok">
-            <li class="boek-blok">
-                <img class="image-boek" src="./image/book-3.png" alt="book-3">
-                <P> naam Auteur inleverdatum </p>
-                </li> 
-            <li class="boek-blok"> 
-                <img class="image-boek" src="./image/book-8.png" alt="book-8">
-                <P> naam Auteur inleverdatum </p>
-                </li>
-            <li class="boek-blok">
-                 <img class="image-boek" src="./image/book-6.png" alt="book-6">
-                 <P> naam Auteur inleverdatum </p>
-                </li>
-            <li class="boek-blok"> 
-                <img class="image-boek" src="./image/book8.jpg" alt="book8">
-                <p> naam auteur inleverdatum </p>
-            </li>
-            <li class="boek-blok">
-                 <img class="image-boek" src="./image/book-2.png" alt="book2">
-                 <p> naam auteur inleverdatum </p>
-                </li>
-        </ul>
-      
-          <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon3', 'borrowing-list3')">Uitleengeschiedenis <span id="toggle-icon3">+</span></h4>
-        <article >
-            <ul class="ul-simpel" id="borrowing-list3">
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-            </ul>
-        </article>
-    </section>
-
-    <section class="gebruiker">
-        <H2> kind2 </H2>
+        <header>
+            <h1 class="title-hompage"> Mijn </h1>
+            <img class="oba-logo" src="./image/oba.png" alt="oba-logo-rood">
+        </header>
+        <section>
+            <!-- zoekbalk -->
+           <div class="search-container">
+                <input type="text" id="zoekbalk" placeholder="Zoek hier je boek">
+                <button class="btn-zoek"> Zoek </button>
+           </div>
+        </section>
     
-        <ul class="ul-blok">
-            <li class="boek-blok"><img class="image-boek" src="./image/book3.jpg" alt="book3"><P>naam Auteur inleverdatum</p></li>
-            <li class="boek-blok"><img class="image-boek" src="./image/book5.jpg" alt="book5"><P>naam Auteur inleverdatum</p></li>
-            <li class="boek-blok"><img class="image-boek" src="./image/book9.jpg" alt="bbok9"><P>naam Auteur inleverdatum</p></li>
-            <li class="boek-blok"> <img class="image-boek" src="./image/book10.jpg" alt="book10"><p>naam auteur inleverdatum</p></li>
-        </ul>
-        <!-- parameters meegegevn met een uniek id -->
-        <h4 onclick="toggleList('toggle-icon5', 'borrowing-list5')">Uitleengeschiedenis <span id="toggle-icon5">+</span></h4>
-        <article >
-            <ul class="ul-simpel" id="borrowing-list5">
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht | </li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
-                <li> Naam boek | Naam Auteur | datum-geleend | datum-terrugebracht |</li>
+        <section class="section-1">
+            <h2 class="h2-small"> Omdat je "..." hebt gelezen: </h2>
+            <ul class="ul-book">
+                <li class="li-book"  >
+                    <button class="btn-heart"  id="heartIcon1"><i class="fas fa-heart heart-outline"></i></button>
+                    <img class="li-book-img" id="book-1" src="./image/book1 jack reacher.jpg" alt="book1">
+                    <p class="genre">Thriller</p>
+
+                    <section class="popup" id="popup1">
+                        <button id="close">&times;</button>
+                        <div class="book-info">
+                            <img class="li-book-img-popup" src="./image/book1 jack reacher.jpg" alt="book1">
+                            
+                            <p>Hier komt meer info van het boek te staan</p>
+                        </div>   
+                    </section>
+                </li>
+                <li class="li-book">    
+                    <button class="btn-heart" id="heartIcon2"><i class="fas fa-heart heart-outline"></i></button>
+                    <img class="li-book-img" src="./image/book1 jack reacher.jpg" alt="book2">
+                    <p class="genre">Thriller</p>
+                </li>
+                <li class="li-book">
+                    <button class="btn-heart" id="heartIcon3"><i class="fas fa-heart heart-outline"></i></button>
+                    <img class="li-book-img" src="./image/book1 jack reacher.jpg" alt="book3">
+                    <p class="genre">Thriller</p>
+                </li>
             </ul>
-        </article>  
-    </section>
-
-    </section>
-
-    
-
-
+            <!-- kleine titel,  met daaronder de boeken lijst  -->
+        </section>
+        <section class="section-2">
+            <!-- nog een lijst? -->
+        </section>
+    </section>  
 </body>
-</html>
