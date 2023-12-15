@@ -424,6 +424,7 @@ body.dark .home .text{
     list-style: none;
     display: flex;
     overflow-x: scroll;
+    border-radius: 10px;
     
 }
 
@@ -442,16 +443,18 @@ body.dark .home .text{
     position: fixed;
     align-items: center;
     top:20%;
-    background-color: #c8ffd5;
-    width: 15rem;
-    height: 25rem;
+    background-color: #d6d5d5;
+    width: 16rem;
+    height: 28rem;
     border-radius: 10px;
     z-index: 1; /* nu zie je geen andere lelementen er door heen */
     
 }
 .li-book-img-popup{
-    width: 8rem;
-    height: 10.2rem; 
+    position: relative;
+    left:2rem;
+    width: 10rem;
+    height: 15rem; 
     object-fit: cover;
     padding: 0.5rem 0.5rem;
 }
@@ -490,7 +493,7 @@ body.dark .home .text{
 .genre{
     position: relative;
     bottom:1.8rem;
-    left: 2rem;   
+    left: 1rem;   
 }
 
 
@@ -633,4 +636,4 @@ body.dark .home .text{
     }
     
 
-}
+}a
