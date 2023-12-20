@@ -498,6 +498,66 @@ body.dark .home .text{
 .melding{
     display: none;
 }
+/* leeslijst */
+
+.btn-bewerk-leeslijst{
+    position: relative;
+    left: 14rem;
+    background-color:#cecece;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.ul-book-leeslijst{
+    background-color: rgb(171, 171, 171);
+    list-style: none;
+    overflow-x: scroll;
+    border-radius: 10px;
+    
+}
+.li-book-leeslijst{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 4px 8px;
+    margin:0.5rem;
+    height: 14rem; 
+    max-width: 18rem;
+    border-radius: 10px;
+    
+}
+.li-book-img-leeslijst{
+    width: 8rem;
+    height: 13rem; 
+    object-fit: cover;
+    padding: 0.5rem 0.5rem;
+ }
+ .info-leeslijst{
+    position: relative;
+    bottom:1.8rem;
+    left: 1rem;   
+}
+.title-hompage-leeslijst{
+    position: relative;
+    top:4.3rem;
+    left:2rem;
+    font-size:40px;  
+    font-family: BM-HANNA;  
+}
+.oba-logo-leeslijst{
+    position: relative;
+    bottom:2.7rem;
+    left:7rem;
+}
+.info-leeslijst{
+    position: relative;
+    left:8rem;
+    bottom:14rem;
+    max-height:12rem;
+    max-width: 9rem;
+    overflow-y:scroll;
+}
+
 
 
 

@@ -80,7 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (boekDetails.style.display === "none") {
             // Toon de elementen
             boekDetails.style.display = "block";
-        } else {
+        } 
+        else {
             // Verberg de elementen
             boekDetails.style.display = "none";
         }
@@ -88,19 +89,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // boeken lijst home pagina hartjes rood maken
-// Selecteert alle knoppen met de class 'btn-heart'
-let buttons = document.querySelectorAll('.btn-heart');
+// Voegt de click event listener toe aan elke knop met de class 'btn-heart'
+let heartButton = document.querySelectorAll('.btn-heart');
 
-// Voeg de click event listener toe aan elke knop
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    button.classList.toggle('heart-fill');
+heartButton.forEach( //forEach roept de functie aan voor elk element.
+    function(heartButton) {
+  heartButton.addEventListener('click', function() {
+    heartButton.classList.toggle('heart-fill');
+    if (heartButton.classList.contains('heart-fill')) {
+         melding.style.display = "block";
+
+    setTimeout(function() {
+        melding.style.display = 'none';
+    }, 3000);
+    }
   });
 });
 
-// bericht boek is toegevoegd
+
+
+
+let melding = document.querySelector(".melding")
+// bericht " boek is toegevoegd"
 function messageToegevoegd() {
-    alert("uw boek is toegevoegd aan favorieten!")
+    if (heartButton === clicked){
+        melding.style.display = "block";
+    }
+    else{
+        melding.style.display = "none";
+    }
+    //if hartje is "filled" 
+    //message disblay block
+    //else message display none
 }
 
 // popup
@@ -124,6 +144,8 @@ function closePopup() {
     let popup = document.getElementById("popup1");
     popup.style.display = "none";
 }
+
+
 
   
 
