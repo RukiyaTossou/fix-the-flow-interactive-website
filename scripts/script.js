@@ -88,23 +88,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // boeken lijst home pagina hartjes rood maken
+// Selecteert alle knoppen met de class 'btn-heart'
+let buttons = document.querySelectorAll('.btn-heart');
 
-let button_heart = document.querySelector("#heartIcon1")
-let button_heart2 = document.querySelector("#heartIcon2")
-let button_heart3 = document.querySelector("#heartIcon3")
-button_heart.addEventListener('click', heartfill)
-button_heart2.addEventListener('click', heartfill2)
-button_heart3.addEventListener('click', heartfill3)
-
-function heartfill() {
-    button_heart.classList.toggle('heart-fill');
-  }
-function heartfill2() {
-    button_heart2.classList.toggle('heart-fill');
-  }
-  function heartfill3() {
-    button_heart3.classList.toggle('heart-fill');
-  }
+// Voeg de click event listener toe aan elke knop
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    button.classList.toggle('heart-fill');
+  });
+});
 
 // bericht boek is toegevoegd
 function messageToegevoegd() {

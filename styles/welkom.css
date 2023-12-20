@@ -495,7 +495,9 @@ body.dark .home .text{
     bottom:1.8rem;
     left: 1rem;   
 }
-
+.melding{
+    display: none;
+}
 
 
 
