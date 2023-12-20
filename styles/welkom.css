@@ -489,7 +489,9 @@ body.dark .home .text{
    object-fit: cover;
    padding: 0.5rem 0.5rem;
 }
-
+.boek-beschrijving{
+    padding: 1rem;
+}
 .genre{
     position: relative;
     bottom:1.8rem;
@@ -553,9 +555,13 @@ body.dark .home .text{
     position: relative;
     left:8rem;
     bottom:14rem;
+    padding-top: 1rem;;
     max-height:12rem;
     max-width: 9rem;
     overflow-y:scroll;
+}
+.info-leeslijst-beschrijving{
+    display: none;
 }
 
 
